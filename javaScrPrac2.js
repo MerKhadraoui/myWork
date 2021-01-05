@@ -67,14 +67,3 @@ console.log(Math.max(34,56, 67, 344));
 // Math.min 
 console.log(Math.min( 11, 12, 0));
 
-//exersice 2
-
-
-// Create a variable with the value of “123”. Convert it to a number.
-let varValue="123"; 
-console.log(parseInt(varValue,10));
-
-// Create a variable with the value of “130.7". Convert it to a number.
-let VarValue2= "130.7";
-console.log(parseFloat(VarValue2));
-// Declare a variable named isDog. If true, print ‘pat, pat’ and if not, print ‘find me a dog to pat!’
