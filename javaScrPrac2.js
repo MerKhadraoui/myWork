@@ -39,18 +39,6 @@ intStum=newNum+int2;
 console.log(intStum);
 let newFloat=parseFloat(int2);
 console.log(newFloat);
-//1. Create two variables.
-// One variable should contain a string value and
-//the other should contain a number. Concatenate the string and the number.
-
-
-let strValue="merykhad";
-
-let numValue= 1987;
-longStr1=strValue+numValue;
-console.log(longStr1);
-
-//2. Check if the following numbers are even numbers. Use a ternary and if the number is even print 30 is even, else print that it is odd.
 
 
 // * + - /
