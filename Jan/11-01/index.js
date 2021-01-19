@@ -121,7 +121,7 @@ console.log(text)
 countNum = 0;
 for (let i = 1; i <= 4;) {
     text += i + " ";
-    if (countNum != 0 && countNum % 3 == 0) {
+    if (countNum %4) {
         i++;
         countNum = 0;
 
@@ -162,17 +162,6 @@ console.log(text);
 
 
 
-const countOccurrence=(sTr,cHar)=>{
-    let strToAr=sTr.split(" ");
-    let countT=0;
-    for(let i=0; i<strToAr.length;i++){
-        if(strToAr[i]=cHar){
-            countT++;}
-       countOccurrence("bfggbfgNHJUIFGb","g")
- console.log(countT);
-}  
-  }
-   
 
 
 
