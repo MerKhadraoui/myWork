@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Dancing Script";
+  src: url("../css/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+h1,
+h2 {
+  font-family: "Dancing Script";
+}
+.moon {
+  background-color: rgb(243, 239, 8);
+  width: 3em;
+  height: 3em;
+  border: rgb(0, 0, 0) 2px solid;
+  border-radius: 6em;
+  display: inline-block;
+  transform: scale(1.2);
+  z-index: 1;
+  opacity: 0.2;
+}
+input {
+  border: none;
+  outline: none;
+  background-color: powderblue;
+  border-radius: 3em;
+}
+input:hover {
+  background-color: salmon;
+}
+.rectangular {
+  background-color: rgb(77, 77, 197);
+  width: 3em;
+  height: 6em;
+  border: black 2px solid;
+  display: inline-block;
+  transform: scale(1.2);
+  z-index: 1;
+  opacity: 0.2;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 10em solid transparent;
+  border-bottom: 6em solid transparent;
+  border-left: 10em solid blue;
+  display: inline-block;
+  transform: scale(1.2);
+  z-index: 3;
+  opacity: 0.2;
+}
+
+.square {
+  background-color: rgb(13, 102, 32);
+  width: 5em;
+  height: 5em;
+  border: black 2px solid;
+  position: relative;
+  top: 2em;
+  box-shadow: 5px 5px 20px grey;
+  transform: rotate(20deg);
+  transform: rotatez(40deg);
+  display: inline-block;
+  transform: scale(1.2);
+  z-index: 1;
+  opacity: 0.2;
+  filter: grayscale(80%);
+}

@@ -1,0 +1,109 @@
+:root {
+}
+body {
+  background-color: orange;
+  background-image: url("./pexels-artem-beliaikin-853199.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  /* Soon will talk about this  */
+  font-size: larger;
+  font-style: normal;
+  font-weight: bold;
+  /* border-top: black 2px dashed;
+  border-bottom: gray 2px dotted; */
+  border-bottom-left-radius: dashed solid dotted;
+}
+
+li a {
+  color: rgba(131, 78, 78, 0.178);
+  font-size: medium;
+}
+
+nav ul {
+  background-color: none;
+}
+
+#job {
+  color: steelblue;
+}
+
+/* #home {
+  color: violet;
+} */
+
+.same {
+  background-color: seashell;
+}
+
+h1,
+h2,
+strong,
+.same {
+  color: #5e778f;
+}
+
+h1,
+h2 {
+  color: blue;
+  font-family: Helvetica;
+  font-weight: normal;
+  font-weight: bold;
+  padding: 40px;
+}
+h1 {
+  font-size: initial;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+section {
+  width: 100vw;
+  height: 80%;
+}
+article {
+  width: 80%;
+  height: 80%;
+  font-size: 3rem;
+}
+#main-text {
+  color: rgb(114, 5, 5);
+  background-color: rgba(231, 235, 31, 0.479);
+  /* letter-spacing: 2px;
+  word-spacing: 5px;
+  line-height: 20px; */
+  text-transform: capitalize;
+  text-indent: 2vw;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+}
+nav ul li a {
+  color: rgb(14, 9, 1);
+  text-decoration: none;
+  background-color: rgba(114, 75, 16, 0.664);
+}
+a:visited,
+a:link {
+  color: rgba(207, 149, 41, 0.945);
+}
+nav ul li a {
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a:hover {
+  background: grey;
+  color: honeydew;
+}
+img {
+  width: 10rem;
+  height: 10rem;
+  float: right;
+}
