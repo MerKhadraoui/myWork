@@ -1,8 +1,8 @@
 JS-exercise
-[04-01](link from github)
+[04-01](https://github.com/MerKhadraoui/JS-exercise/blob/main/Jan/04-01/javaExercise.js)
 
 - Introduction of JavaScript
-  [14-01](link from github)
+  [14-01](https://github.com/MerKhadraoui/JS-exercise/blob/main/Jan/14-01/inndex.js)
 - Declare a variable with diffrent values "string" "number"
 - converting string to intiger _parseInt()_;
 - different Mathematical calculation using : _.Math_ (.max , .min , .floor , .ceil ,random )
