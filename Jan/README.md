@@ -27,17 +27,17 @@ JS-exercise
   [26-01](https://github.com/MerKhadraoui/JS-exercise/blob/main/Jan/26-01/index.js)
 - More about Function
 - 
-  [01-02](link from github)
+  [01-02](https://github.com/MerKhadraoui/JS-exercise/blob/main/feb/01-02/index.js)
 - Nested scopes : Accessing auter global variablees Closure is for secure the cases and the app
   SIAF self-invoking anonymous func IIFEImmediately-invoked Function Expression
   
-  [02-02](link from github)
+  [02-02](https://github.com/MerKhadraoui/JS-exercise/blob/main/feb/02-02/index.js)
 - Define the objects Properties + exercises (object methods)
 - 
-  [09-02](link from github)
+  [09-02](https://github.com/MerKhadraoui/JS-exercise/blob/main/feb/09-02/index.js)
 - clone array and object (shallow copy)
 - 
-  [10-02](link from github)
+  [10-02](https://github.com/MerKhadraoui/JS-exercise/blob/main/feb/10-02/index.js)
 - shallow clone for an object using .assign()
 - Recursion
 - Deep copy using recursion
