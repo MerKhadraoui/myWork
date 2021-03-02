@@ -52,7 +52,7 @@ for (let i = 0; i < nameList.length; i++) {
   console.log(nameList[i]);
 }
 
-//.split() string => Array ############################ importent
+//.split() string => Array ############################
 // divide a string into an array
 let str = "Hi this is me";
 let newArr = str.split(" ");

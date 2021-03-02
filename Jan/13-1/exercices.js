@@ -1,4 +1,3 @@
-
 // Create a function that takes a number.
 // as its only argument and returns true .
 //if it's less than or equal to zero,
@@ -11,13 +10,12 @@
 // isLEQZero(-4) ➞ true
 // isLEQZero(10) ➞ false
 const isLEQZero = (num) => {
-    if (num <= 0) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
+  if (num <= 0) {
+    return true;
+  } else {
+    return false;
+  }
+};
 console.log(isLEQZero(34));
 
 //  Number to Month Name
@@ -25,33 +23,33 @@ console.log(isLEQZero(34));
 // For example, if you're given 3 as input, your function should return "March", because March is the 3rd month.
 //  here are the months array as a small help :)
 let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",];
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
 
 // Examples:
 
 // monthName(3) ➞ "March"
 const monthName = (monthNum) => {
-    let result = "";
-    let thNum = monthNum - 1;
-    if (thNum >= 0 && thNum <= 12) {
-        result = months[thNum];
-    }
-    else {
-        result = `sorry you need to enter number between 1 and 12`;
-    }
-    return result;
-}
+  let result = "";
+  let thNum = monthNum - 1;
+  if (thNum >= 0 && thNum <= 12) {
+    result = months[thNum];
+  } else {
+    result = `sorry you need to enter number between 1 and 12`;
+  }
+  return result;
+};
 console.log(monthName(3));
 
 /* create a function should.
@@ -66,20 +64,10 @@ inventoryCheck( "ham") returns false
 */
 let storeArr = ["milk", "eggs", "cheese", "butter"];
 const inventoryCheck = (producName) => {
-    result = storeArr.includes(producName);
-    //for (let i=0;i<=storeArr.length;i++){
-    // if (storeArr[i]==producName){
+  result = storeArr.includes(producName);
 
-    //return true;
-    // }
-
-    // else{
-    //    return false;
-    // } 
-
-    //  }
-    return result;
-}
+  return result;
+};
 console.log(inventoryCheck("tomatos"));
 console.log(inventoryCheck("cheese"));
 
@@ -98,13 +86,13 @@ console.log(inventoryCheck("cheese"));
 // calcLifetimeSupply(40, 3) ➞ "The snack company should provide you with 65,745 units, until you are a ripe old age of 100. Happy snacking!"
 
 const calcLifetimeSupply = (age, snack) => {
-    let lifeTime = 100 - age;
-    let yearsAmount = snack * 365;
+  let lifeTime = 100 - age;
+  let yearsAmount = snack * 365;
 
-    let result = lifeTime * yearsAmount;
+  let result = lifeTime * yearsAmount;
 
-    return `The snack company should provide you with ${result} units, until you are a ripe old age of 100. Happy snacking!`
-}
+  return `The snack company should provide you with ${result} units, until you are a ripe old age of 100. Happy snacking!`;
+};
 console.log(calcLifetimeSupply(25, 2));
 
 /////////////////////////////////////
@@ -117,21 +105,14 @@ Bonus: create another function by doing some changes to the previous function in
   1
 */
 
-
 const drawShape = () => {
-let text2;
-    for (let i = 5; i >= 0; i--) {
-        text2="";
-        for (let j = 1; j <= i; j++) {
-            text2 += j;
-           
-        }
-        console.log(text2);
-
-    } 
-}
+  let text2;
+  for (let i = 5; i >= 0; i--) {
+    text2 = "";
+    for (let j = 1; j <= i; j++) {
+      text2 += j;
+    }
+    console.log(text2);
+  }
+};
 drawShape();
-
-
-
-
