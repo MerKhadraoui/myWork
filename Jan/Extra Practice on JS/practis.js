@@ -56,3 +56,25 @@ const emotify = (strWithEmo) => {
 };
 console.log(emotify("Make me smile"));
 console.log(emotify("Make me grin"));
+
+//#endregionCreate a function which returns the number of true values there are in an array.
+// Examples
+// countTrue([true, false, false, true, false]) ➞ 2
+
+// countTrue([false, false, false, false]) ➞ 0
+
+// countTrue([]) ➞ 0
+
+const countTrue = (boolArr) => {
+  let counter = 0;
+  for (let i = 0; i < boolArr.length; i++) {
+    if (boolArr[i] == true && boolArr.length > 0) {
+      counter++;
+    } else {
+      counter;
+    }
+  }
+  return counter;
+};
+console.log(countTrue([true, false, false, true, false]));
+console.log(countTrue([]));

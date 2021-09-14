@@ -1,0 +1,15 @@
+.box {
+  @include fade-in(3s);
+  @include size-for-divs;
+  background-color: hotpink;
+}
+@keyframes fade-in {
+  0% {
+    @include hide;
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    @include reveal;
+    transform: scale(1) rotate(20deg);
+  }
+}

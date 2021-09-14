@@ -1,0 +1,8 @@
+.light {
+  content: "";
+  width: 5rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px dashed red;
+  /* background-color: yellow; */
+}
