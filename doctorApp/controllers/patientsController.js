@@ -21,8 +21,13 @@ controller.addPatient = async (req, res) => {
   });
   try {
     await newPatient.save();
-    res.status(201).render("patients", { newPatient });
-    //json(newPatient)
+    res
+      .status(201)
+      .render("patientsList", { data: "this is the list of patients" });
+    //json(newPatient);
+    console.log(newPatient);
+    //.render("patients", { data });
+    //
   } catch (err) {
     res.status(err.status || 500).json({ message: err.message });
   }
