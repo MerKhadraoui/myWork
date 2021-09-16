@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const userControllers = require("../controllers/userController");
 const multer = require("multer");
+//const { body, validationResult } = require("express-validator");
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -29,9 +30,17 @@ const upload = multer({
 });
 
 router.get("/", (req, res) => {
+  let done, title;
+  if (req.cookies.session_id) {
+    title = "You are already logged in";
+    done = true;
+  } else {
+    title = "Welcome";
+    done = false;
+  }
   res.render("index", {
-    title: "Welcome",
-    done: false,
+    title,
+    done,
     errors: req.session.errors,
   });
   req.session.errors = null;
@@ -39,15 +48,20 @@ router.get("/", (req, res) => {
 // register
 router.post("/register", upload.single("avatar"), userControllers.addUser);
 // login
-router.get("/login", (req, res) => {
+let login = "login";
+router.get(`/${login}`, (req, res) => {
   // This if statement can be done in middleware to check if the user logged in or not
-
+  let title, done;
   if (req.cookies.session_id) {
-    res.send("You ar e already logged in <br> <a href='/logout'>logout</a>");
+    title = "You are already logged in";
+    done = true;
+  } else {
+    title = "Login";
+    done = false;
   }
   res.render("login", {
-    title: "login",
-    done: false,
+    title,
+    done,
     errors: req.session.errors,
   });
   req.session.errors = null;
@@ -62,5 +76,5 @@ router.get("/logout", (req, res) => {
   }
   res.redirect("/");
 });
-
+//router.get("/logout", userControllers.logout);
 module.exports = router;

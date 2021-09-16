@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const allowAccess = require("../controllers/authControllers");
-const userControllers = require("../controllers/userControllers");
+const allowedAccess = require("../controllers/authController");
+const userControllers = require("../controllers/userController");
 
+router.route("/").get(allowedAccess.roleCheck, userControllers.getAllUsers);
 module.exports = router;

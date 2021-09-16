@@ -3,6 +3,7 @@ const bcrypt = require("bcrypt");
 const User = require("../models/userModel");
 const Session = require("../models/sessionModel");
 const uuid = require("uuid").v4;
+
 const userControllers = {};
 
 userControllers.getAllUsers = async (req, res) => {
@@ -20,10 +21,7 @@ userControllers.addUser = async (req, res) => {
       .status(400)
       .send("This name is already been used <br> <a href='/'>Try again</a>");
   }
-  // to validate later :)
-  // if any errors
-  // req.session.done = false;
-  // it was cool and no errors
+
   req.session.done = true;
   try {
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
@@ -45,7 +43,6 @@ userControllers.addUser = async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 };
-
 userControllers.login = async (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
@@ -83,6 +80,7 @@ userControllers.login = async (req, res) => {
     res.status(err.status).json({ message: err.message });
   }
 };
+// userControllers.logout = async (req, res) => {};
 userControllers.getOne = async (req, res) => {
   const username = req.params.name;
   try {
