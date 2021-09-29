@@ -15,6 +15,11 @@ const patientsDataSchema = new mongoose.Schema({
     type: String,
   },
   add: String,
+  problemes: { type: String, require: true },
+  doctorCons: [doctorSchema],
+});
+const doctorSchema = new mongoose.Schema({
+  consultation: String,
 });
 //// exporting your file
 

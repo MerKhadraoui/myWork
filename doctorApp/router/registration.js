@@ -6,7 +6,8 @@ const PatientsData = require("../model/patientsModel");
 router.get("/", (req, res) => {
   res
     .status(200)
-    .render("registration", { title: " c'est pour vous registion des " });
+    .render("registration", { title: " c'est pour vous registion  " });
 });
 router.route("/").post(controller.addPatient);
+router.route("/:name").get(controller.getOnePatient);
 module.exports = router;
