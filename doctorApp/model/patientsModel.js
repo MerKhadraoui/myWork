@@ -1,6 +1,9 @@
 // require your DB
 const mongoose = require("mongoose");
 // create blue print for yout data base objects
+const doctorSchema = new mongoose.Schema({
+  consultation: String,
+});
 const patientsDataSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -18,9 +21,7 @@ const patientsDataSchema = new mongoose.Schema({
   problemes: { type: String, require: true },
   doctorCons: [doctorSchema],
 });
-const doctorSchema = new mongoose.Schema({
-  consultation: String,
-});
+
 //// exporting your file
 
 module.exports = mongoose.model("patientsData", patientsDataSchema); // create new collection mongoose.model(colectionName, your schema)
